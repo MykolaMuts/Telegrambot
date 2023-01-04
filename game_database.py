@@ -22,6 +22,7 @@ def drop_table():
 
 
 def add_user(user_name, password):
+    create_table()
     conn = sqlite3.connect('memory_game.db')
     cursor = conn.cursor()
 
